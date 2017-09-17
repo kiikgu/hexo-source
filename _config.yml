@@ -8,7 +8,7 @@ subtitle: 王定坤的博客
 description: 积累、思考、成长
 author: 王定坤
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
