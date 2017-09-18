@@ -50,7 +50,7 @@ Java集合框架提供了适合各种场景的接口和实现，以及操作集�
 
 Java集合框架核心接口是框架的基础，包含Collection和Map两个分支。
 
-#### Collection接口**
+#### Collection接口
 
 ![collection接口](/img/20170917/colls-interfaces.png)
 ![map接口](/img/20170917/map-interfaces.png)
