@@ -105,6 +105,7 @@ Java集合框架核心接口是框架的基础，包含Collection和Map两个分
 * 提供了Abstract类方便扩展：AbstractCollection, AbstractSet, AbstractList, AbstractSequentialListh和 AbstractMap
 
 
+### 并发集合
 #### 并发集合接口
 ![并发集合接口](/img/20170917/con-colls-interfaces.png)
 
