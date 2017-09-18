@@ -32,8 +32,9 @@ Java集合框架提供了适合各种场景的接口和实现，以及操作集�
 毋庸置疑，Java集合框架的出现是必然事件，极大减轻了编程的负担。Java集合框架的特点：
 
 1. 提供了一组“小且精”的接口
-2. 提供了适合各种场景的接口实现
-3. 提供了针对接口的一些常用算法，如：排序，搜索等
+2. 提供了适合各种接口实现
+3. 提供了Abstract实现，方便扩展
+4. 提供了针对接口的一些常用算法和工具，如：排序，搜索等
 
 她能带给我们的好处：
 
@@ -49,9 +50,14 @@ Java集合框架提供了适合各种场景的接口和实现，以及操作集�
 
 Java集合框架核心接口是框架的基础，包含Collection和Map两个分支。
 
+#### Collection接口**
+
+![collection接口](/img/20170917/colls-interfaces.png)
+![map接口](/img/20170917/map-interfaces.png)
+
 * 每个接口都是通用的
-* 接口“小而美” <br>
-   没有为不同的场景提供不同的接口，接口实现可以选择性实现函数，调用不支持的函数会抛出UnsupportedOperationException
+* 接口“小而美”, 很多集合修改方法可选择性实现，调用不支持的修改方法抛出UnSupportedException
+* 不同的接口具有不同的特性：modified/unmodified、mutable/immutable、fixed-size/variable-size、random access/sequence access
 
 **1. Collection**
 
@@ -90,9 +96,25 @@ Java集合框架核心接口是框架的基础，包含Collection和Map两个分
 
 * 继承自Map且Key值有序的k-v映射集合
 
+#### 接口实现
+![接口实现](/img/20170917/colls-implements.png)
+
+* 普通的接口实现都是unsynchronized
+* Collections提供synchronize方法将集合变为synchronized
+* 集合遍历时支持fail-fast
+* 提供了Abstract类方便扩展：AbstractCollection, AbstractSet, AbstractList, AbstractSequentialListh和 AbstractMap
+
+
+#### 并发集合接口
+![并发集合接口](/img/20170917/con-colls-interfaces.png)
+
+#### 并发集合实现
+![并发集合实现](/img/20170917/con-colls-implements.png)
+
+
 ### 总结
-这一节首先介绍了Java集合框架的使命，它的出现减轻了程序员的负担，且大大提高了程序的复用率；接着介绍了集合框架的构成，它是有三部分构成：一组小而美的接口，各种集合实现以及操作集合的常用算法；最后，简单介绍了集合的核心接口，及每个接口所代表集合的特点。
+这一节首先介绍了Java集合框架的使命，提高了编程效率，且大大提高了程序的复用率；接着介绍了集合框架的构成，它是有三部分构成：一组小而美的接口，各种集合实现以及操作集合的常用算法；最后，简单介绍了集合的核心接口，及每个接口所代表集合的特点。
 
 ### 参考
-
+http://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
 http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html
