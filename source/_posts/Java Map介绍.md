@@ -3,8 +3,11 @@ title: Java Map介绍
 date: 2017-10-09 06:05:25
 categories: Java
 tags: [Java,Map]
-toc:true
+toc: true
 ---
+
+简单介绍下Map接口
+<!--more-->
 
 ### Java Map介绍
 
@@ -34,6 +37,7 @@ map可以转换为3种集合视图：
 
 #### Java 8特性
 ##### stream
+
 ```
 	public static void test1() {
         List<Person> persons = Arrays.asList(new Person("p1", 10), new Person("p2", 12), new Person("p3", 10));
