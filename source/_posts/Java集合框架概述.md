@@ -117,5 +117,5 @@ Java集合框架核心接口是框架的基础，包含Collection和Map两个分
 这一节首先介绍了Java集合框架的使命，提高了编程效率，且大大提高了程序的复用率；接着介绍了集合框架的构成，它是有三部分构成：一组小而美的接口，各种集合实现以及操作集合的常用算法；最后，简单介绍了集合的核心接口，及每个接口所代表集合的特点。
 
 ### 参考
-http://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
-http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html
+[http://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html](http://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
+[http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html](http://docs.oracle.com/javase/tutorial/collections/interfaces/index.html)
