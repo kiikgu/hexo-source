@@ -16,6 +16,9 @@ HashMap是我们在编程中常用的数据结构，本篇主要从HashMap的几
 <!--more-->
 
 ### 概述
+
+**本文分析的HashMap源码来自：jdk1.8**
+
 HashMap是我们在编程中常用的数据结构，本篇主要从HashMap的几个特性出发，深入分析其内部实现原理。
 
 * capacity和load_factor
