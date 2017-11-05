@@ -124,7 +124,27 @@ HashMap通过modCount字段记录HashMap结构变化测试，即通过modCount�
 ![HashMap iterator remove modCount](/img/20171018/hashMap_iterator_remove_modCount.png)
 
 #### 序列化/反序列化
-分析HashMap源码时
+分析HashMap源码时，发现HashMap中的很多变量都是transient的，那么这些transient变量在序列化时不会被保存下来，HashMap为什么要这么做？它是通过什么方式实现序列化、反序列化的呢？
+
+![HashMap trasient变量](/img/20171018/hashMap_serializable.png)
+
+HashMap中key的hash值使用hashCode()方法生成，而hashCode()方法是native方法，在不同JVM实现上面可能不同。如果HashMap的变量不是transient，在序列化和反序列化时HashMap的内部结构是不会发生变化的，如果执行反序列化机器的hashCode()的返回值跟序列化机器返回值不同，那么整个HashMap就会发生错乱。
+
+**HashMap实现序列化反序列化**
+
+![HashMap 序列化](/img/20171018/hashMap_serializable_001.png)
+
+![HashMap 序列化](/img/20171018/hashMap_serializable_002.png)
+
+![HashMap 反序列化](/img/20171018/hashMap_serializable_003.png)
+
+HashMap通过实现writeObject()、readObject()方法来实现序列化和反序列化，序列化时保存非transient变量、capacity、size及所有的key-value，反序列化时读取这些变量重新构造新的Hash表，并存储key-value值。
+
+关于序列化反序列化请参考：{% post_link serialize和deserialize %}
+
+
+### 总结
+本文主要从HashMap的知识点点作为切入点，分析了HashMap的实现，通过这篇文章可以了解HashMap的capacity和load_factor、put/get、keySet方法、fast-fail、序列化/反序列化，及相关实现的细节。
 
 ### 参考
 
