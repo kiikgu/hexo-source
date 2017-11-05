@@ -13,6 +13,7 @@ HashMap是我们在编程中常用的数据结构，本篇主要从HashMap的几
 * put/get
 * keySet方法
 * fast-fail
+* 序列化/反序列化
 
 <!--more-->
 
@@ -26,7 +27,7 @@ HashMap是我们在编程中常用的数据结构，本篇主要从HashMap的几
 * fast-fail
 
 #### capacity和load_factor
-capacity和load_factor分别表示HashMap的容量和负载因子，简单来说，容量是指HashMap能装多少元素，load_factor指HashMap所能承受的负载有多大，就好比一个能装20L水的桶，全部装满会的话会增加我们操作的难度。同样，如果把HashMap装满的话，会降低HashMap的性能，所以当元素个数达到负载因子规定的阈值时，HashMap会进行扩容，容量扩大一倍。<br>
+capacity和load\_factor分别表示HashMap的容量和负载因子，简单来说，容量是指HashMap能装多少元素，load\_factor指HashMap所能承受的负载有多大，就好比一个能装20L水的桶，全部装满会的话会增加我们操作的难度。同样，如果把HashMap装满的话，会降低HashMap的性能，所以当元素个数达到负载因子规定的阈值时，HashMap会进行扩容，容量扩大一倍。<br>
 
 **HashMap结构**
 
@@ -122,8 +123,13 @@ HashMap通过modCount字段记录HashMap结构变化测试，即通过modCount�
 
 ![HashMap iterator remove modCount](/img/20171018/hashMap_iterator_remove_modCount.png)
 
+#### 序列化/反序列化
+分析HashMap源码时
+
 ### 参考
 
 [http://hllvm.group.iteye.com/group/topic/45517](http://hllvm.group.iteye.com/group/topic/45517)
 
 [https://stackoverflow.com/questions/1313922/step-through-jdk-source-code-in-intellij-idea](https://stackoverflow.com/questions/1313922/step-through-jdk-source-code-in-intellij-idea)
+
+[https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
