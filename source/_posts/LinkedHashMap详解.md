@@ -9,6 +9,8 @@ toc: true
 LinkedHashMap继承自HashMap, 它在HashMap的结构之上，将所有的节点连接起来，组成双向链表，从而具有了新的特性，本文将详细介绍LinkedHashMap具有的新特性及其实现。
 <!--more-->
 
+**本文分析的HashMap源码来自：jdk1.8**
+
 ### LinkedHashMap结构
 ![LinkedHashMap结构](/img/20171108/LinkedHashMap结构.png)
 
@@ -44,3 +46,5 @@ LinkedHashMap可以用来实现LRU cache，从上图中的afterNodeInsertion方�
 
 ### 参考
 [https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html)
+
+版权声明：本文为博主原创文章，转载请注明出处
