@@ -153,3 +153,5 @@ HashMap通过实现writeObject()、readObject()方法来实现序列化和反序
 [https://stackoverflow.com/questions/1313922/step-through-jdk-source-code-in-intellij-idea](https://stackoverflow.com/questions/1313922/step-through-jdk-source-code-in-intellij-idea)
 
 [https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
+
+版权声明：本文为博主原创文章，转载请注明出处
