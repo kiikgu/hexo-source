@@ -85,11 +85,10 @@ NavigableMap接口扩展了SortedMap接口，增加了如下功能：
 * 提供了获取首位元素的方法：firstEntry、pollFirstEntry、lastEntry、pollLastEntry
 * 不支持Entry.setValue方法
 
-### 内部实现结构
+### 内部实现及性能
 
-TreeMap内部实现结构为红黑树
+TreeMap内部实现结构为红黑树，可参考：{% post_link 详解红黑树 %}。<br> TreeMap的containsKey，get，put及remove操作的时间复杂度是log(n)
 
-### 性能
 
 ### 参考
 [https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html)
