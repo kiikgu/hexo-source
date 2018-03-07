@@ -1,10 +1,8 @@
 ---
 title: Java集合概述
 date: 2017-09-17 14:55:49
-categories:
-- java基础
-tags:
-- java
+categories: [java]
+tags: [java,集合]
 toc: true
 ---
 

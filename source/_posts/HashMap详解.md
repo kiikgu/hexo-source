@@ -1,8 +1,8 @@
 ---
 title: HashMap详解
 date: 2017-10-19 07:24:57
-categories: Java
-tags: [Java, Map]
+categories: [java]
+tags: [java,集合]
 toc: true
 ---
 **本文分析的HashMap源码来自：jdk1.8**
