@@ -2,7 +2,7 @@
 title: serialize和deserialize
 date: 2017-11-03 08:15:53
 categories: [java]
-tags: [序列化,反序列化]
+tags: [序列化,反序列化,Serializable]
 toc: true
 
 ---

@@ -2,7 +2,7 @@
 title: Java Map介绍
 date: 2017-10-09 06:05:25
 categories: [java]
-tags: [java,集合]
+tags: [Map,java,集合]
 toc: true
 ---
 

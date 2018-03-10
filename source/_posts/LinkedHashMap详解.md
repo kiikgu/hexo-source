@@ -2,7 +2,7 @@
 title: LinkedHashMap详解
 date: 2017-11-09 08:41:19
 categories: [java]
-tags: [java,集合]
+tags: [LinkedHashMap,java,集合]
 toc: true
 ---
 
