@@ -3492,7 +3492,7 @@ var Gitment = function () {
 
       return _utils.http.post('/repos/' + owner + '/' + repo + '/issues', {
         title: title,
-        labels: labels.concat(['gitment', 'blog']),
+        labels: labels.concat(['gitment', title]),
         body: link + '\n\n' + desc
       }).then(function (meta) {
         _this5.state.meta = meta;
@@ -3527,7 +3527,7 @@ var Gitment = function () {
     value: function loadMeta() {
       var _this7 = this;
 
-      var id = this.id,
+      var id = this.title,
           owner = this.owner,
           repo = this.repo;
 
