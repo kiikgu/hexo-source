@@ -8,13 +8,12 @@ toc: true
 
 ApplicationContext的实现类也实现了生命周期接口，如：LifeCycle和Closable，通常执行这些接口方法，如：close(), stop()，表示ApplicationContext生命周期的终结，此时需要销毁context中的所有bean并释放bean已经加载的资源。Spring抽象并实现了一套消息发布和订阅机制，很好地完成了这一工作。在调用生命周期相关方法时发布消息，消息订阅者接收到消息后，根据消息类型进行相应处理。<br>
 
-Spring event相关接口包括：ApplicationEvent，ApplicationListener，ApplicationEventPublisher, ApplicationEventPublisherAware。ApplicationEvent是对消息通知的抽象，表示消息事件；ApplicationEventListner是事件接收者。一个事件发布后，注册到ApplicationContext中的listener都能收到消息通知，并做处理。这是一个典型的观察者模式。 <br>
-
-通常定义新的Event需要实现ApplicationEvent接口，Spring4.2之后提供了注解方式，使得Event对象和Spring Api解耦。
-
 本章主要介绍Spring的event机制并深入剖析其实现。
 <!--more-->
 
+Spring event相关接口包括：ApplicationEvent，ApplicationListener，ApplicationEventPublisher, ApplicationEventPublisherAware。ApplicationEvent是对消息通知的抽象，表示消息事件；ApplicationEventListner是事件接收者。一个事件发布后，注册到ApplicationContext中的listener都能收到消息通知，并做处理。这是一个典型的观察者模式。 <br>
+
+通常定义新的Event需要实现ApplicationEvent接口，Spring4.2之后提供了注解方式，使得Event对象和Spring Api解耦。
 
 #### 标准事件
 Spring提供了几种内部事件，在ApplicationContext的生命周期中触发。
