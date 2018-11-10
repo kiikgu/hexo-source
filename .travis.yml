@@ -27,3 +27,4 @@ branches:
 env:
 global:
  - GH_REF: github.com/kiikgu/kiikgu.github.io.git #设置GH_REF，注意更改yourname
+
