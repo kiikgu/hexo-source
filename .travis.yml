@@ -8,6 +8,7 @@ install:
  - npm install hexo-renderer-jade@0.3.0 --save
  - npm install hexo-renderer-sass --save
  - npm install hexo-helper-qrcode --save
+ - npm install node-sass --save
 script:
  - hexo cl #清除
  - hexo g #生成
