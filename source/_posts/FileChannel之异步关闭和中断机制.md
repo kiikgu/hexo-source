@@ -1,8 +1,8 @@
 ---
 title: FileChannel之异步关闭和中断机制
 date: 2018-06-27 22:17:40
-categories: [java,nio]
-tags: [java]
+categories: [nio]
+tags: [nio, FileChannel]
 toc: [true]
 
 ---

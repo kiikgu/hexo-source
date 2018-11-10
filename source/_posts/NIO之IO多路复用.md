@@ -1,7 +1,7 @@
 ---
 title: NIO之IO多路复用
 date: 2018-07-26 22:03:22
-categories: [nio,java]
+categories: [nio]
 tags: [NIO,blocking I/O,nonblocking I/O,I/O multipexer, signal driven I/O, aynchronous I/O,阻塞I/O,非阻塞I/O,I/O多路复用,异步I/O]
 toc: true
 
